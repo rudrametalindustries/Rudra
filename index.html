@@ -30,7 +30,7 @@
 
 .nav-link.active,
 .dropdown-item:hover {
-  color: #0ef !important;
+  color: rgb(12, 12, 12) !important;
 }
 
 
@@ -123,6 +123,31 @@
     width: 40px;
   }
 }
+.navbar {
+  transition: all 0.4s ease-in-out;
+  background-color: transparent;
+}
+
+.navbar.scrolled {
+  background-color: rgba(0, 0, 0, 0.9); /* Black transparent */
+  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+.navbar .nav-link {
+  color: rgb(10, 10, 10);
+}
+
+.navbar .nav-link:hover {
+  color: #080808;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar .dropdown-menu {
+  background-color: rgba(0, 0, 0, 0.9);
+}
 
 
 
@@ -136,53 +161,53 @@
 
 <!-- Navbar -->
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg sticky-top">
-  <div class="container">
-    
+<nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light shadow-sm">
+    <div class="container">
 <img src="r.png" alt="Rudra Metal Industries Logo" class="rudra-logo">
-    <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">About</a>
-          <ul class="dropdown-menu bg-dark">
-            <li><a class="dropdown-item text-white" href="vision.html">Vision</a></li>
-            <li><a class="dropdown-item text-white" href="mission.html">Mission</a></li>
-          </ul>
-        </li>
- <li class="nav-item"><a class="nav-link" href="product.html">Product</a></li>
-        <!-- <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="product.html" role="button" data-bs-toggle="dropdown">Product</a>
-          <ul class="dropdown-menu bg-dark">
-            <li><a class="dropdown-item text-white" href="operation.html">Operation</a></li>
-            <li><a class="dropdown-item text-white" href="clientele.html">Clientele</a></li>
-            <li><a class="dropdown-item text-white" href="quality.html">Quality</a></li>
-            <li><a class="dropdown-item text-white" href="infrastructure.html">Infrastructure</a></li>
-          </ul>
-        </li> -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
 
-        <!-- <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Core Value</a>
-          <ul class="dropdown-menu bg-dark">
-            <li><a class="dropdown-item text-white" href="safety.html">Safety</a></li>
-            <li><a class="dropdown-item text-white" href="customer.html">Customer</a></li>
-            <li><a class="dropdown-item text-white" href="quality-core.html">Quality</a></li>
-          </ul>
-        </li> -->
-         <li class="nav-item"><a class="nav-link" href="core value.html">Core Values</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">About</a>
+            <ul class="dropdown-menu bg-dark">
+              <li><a class="dropdown-item text-white" href="vision.html">Vision</a></li>
+              <li><a class="dropdown-item text-white" href="mission.html">Mission</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="product.html">Product</a></li>
+          <!-- <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Product</a>
+            <ul class="dropdown-menu bg-dark">
+              <li><a class="dropdown-item text-white" href="operation.html">Operation</a></li>
+              <li><a class="dropdown-item text-white" href="clientele.html">Clientele</a></li>
+              <li><a class="dropdown-item text-white" href="quality.html">Quality</a></li>
+              <li><a class="dropdown-item text-white" href="infrastructure.html">Infrastructure</a></li>
+            </ul>
+          </li> -->
+
+          <!-- <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Core Value</a>
+            <ul class="dropdown-menu bg-dark">
+              <li><a class="dropdown-item text-white" href="safety.html">Safety</a></li>
+              <li><a class="dropdown-item text-white" href="customer.html">Customer</a></li>
+              <li><a class="dropdown-item text-white" href="quality-core.html">Quality</a></li>
+            </ul>
+          </li> -->
+                   <li class="nav-item"><a class="nav-link" href="core value.html">Core Values</a></li>
+
           <li class="nav-item"><a class="nav-link" href="operation.html">Operation</a></li>
-
-        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-      </ul>
+          <li class="nav-item"><a class="nav-link active"  href="services.html" >Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
 
 
 
@@ -261,19 +286,19 @@
 <p>
   <i class="fas fa-phone me-2 text-info"></i>
   <a href="tel:9049301195" class="text-white text-decoration-none">
-   <b> Darshan Gosavi :</b>+91 9049301195
+     <b>Arjun Gaikwad : </b>+91 8637706606
   </a>
 </p>
 <p>
   <i class="fas fa-phone me-2 text-info"></i>
   <a href="tel:+91 8637706606" class="text-white text-decoration-none">
-    <b>Arjun Gaikwad : </b>+91 8637706606
+   <b> Darshan Gosavi :</b>+91 9049301195
   </a>
 </p>
 <p>
   <i class="fas fa-envelope me-2 text-info"></i>
   <a href="mailto:rudrametalindustries7@gmail.com" class="text-info fs-6 text-decoration-none">
-    <b>Email Us:</b> rudrametalindustries7@gmail.com
+    <b style="color: #ccc;">Email Us:</b> rudrametalindustries7@gmail.com
   </a>
 </p>
 
